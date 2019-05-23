@@ -71,7 +71,7 @@ class Pipeline(object):
         count = 0
 
         #swap axes to make axis 0 represents the modality and axis 1 represents the slice. take the ground truth
-        gt_im = np.swapaxes(self.train_im, 0, 1)[4]   
+        gt_im = np.swapaxes(self.train_im, 0, 1)[3]   
 
         #take flair image as mask
         msk = np.swapaxes(self.train_im, 0, 1)[0]
